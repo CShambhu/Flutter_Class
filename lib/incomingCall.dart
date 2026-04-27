@@ -12,23 +12,23 @@ class incomingCall extends StatelessWidget {
           children: [
             Padding(
             padding: const EdgeInsets.only(top: 50),
-            child: Card(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(5)
-              ),
-              child: Column(
-                children: [
-                  CircleAvatar(
-                    backgroundColor: Colors.blue,
-                    child: Icon(Icons.person),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 10),
-                    child: Text("This is a card"),
-                  ),
-                ],
-              ),
-            ),
+            // child: Card(
+            //   shape: RoundedRectangleBorder(
+            //     borderRadius: BorderRadius.circular(5)
+            //   ),
+            //   child: Column(
+            //     children: [
+            //       CircleAvatar(
+            //         backgroundColor: Colors.blue,
+            //         child: Icon(Icons.person),
+            //       ),
+            //       Padding(
+            //         padding: const EdgeInsets.only(left: 10),
+            //         child: Text("This is a card"),
+            //       ),
+            //     ],
+            //   ),
+            // ),
           ),
             Card(
               shape: RoundedRectangleBorder(

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_class/cardDesign.dart';
-import 'package:flutter_class/incomingCall.dart';
-import 'package:flutter_class/stackDesign.dart';
+import 'package:flutter_class/stackCard.dart';
 
 void main() {
   runApp(const MyMainApp());
@@ -20,7 +18,7 @@ class MyMainApp extends StatelessWidget {
         useMaterial3: true,
       ),
       
-      home: const incomingCall(),
+      home: const StackCard(),
     );
   }
 }
