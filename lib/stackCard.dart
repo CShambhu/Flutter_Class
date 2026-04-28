@@ -13,43 +13,46 @@ class StackCard extends StatelessWidget {
             Padding(padding: EdgeInsets.only(top: 50)),
 
             //Top Card for GoodMorning John Doe
-            Card(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20),
-              ),
-              color: Colors.transparent,
-              elevation: 0,
-              child: Row(
-                children: [
-                  Column(
-                    children: [
-                      Text(
-                        "Good Morning,",
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.deepPurple,
+            Padding(
+              padding: const EdgeInsets.only(bottom: 15),
+              child: Card(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                color: Colors.transparent,
+                elevation: 0,
+                child: Row(
+                  children: [
+                    Column(
+                      children: [
+                        Text(
+                          "Good Morning,",
+                          style: TextStyle(
+                            fontSize: 15,
+                            color: Colors.deepPurple,
+                          ),
                         ),
-                      ),
-                      Text(
-                        "John Doe",
-                        style: TextStyle(
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold,
+                        Text(
+                          "John Doe",
+                          style: TextStyle(
+                            fontSize: 25,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                  Spacer(),
-                  Row(
-                    children: [
-                      CircleAvatar(
-                        radius: 30,
-                        backgroundColor: Color.fromARGB(255, 205, 167, 240),
-                        child: Icon(Icons.person, size: 50),
-                      ),
-                    ],
-                  ),
-                ],
+                      ],
+                    ),
+                    Spacer(),
+                    Row(
+                      children: [
+                        CircleAvatar(
+                          radius: 30,
+                          backgroundColor: Color.fromARGB(255, 205, 167, 240),
+                          child: Icon(Icons.person, size: 50),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
 
@@ -104,7 +107,7 @@ class StackCard extends StatelessWidget {
                               color: const Color.fromARGB(255, 92, 15, 216),
                             ),
                           ),
-                          SizedBox(height: 30),
+                          SizedBox(height: 29),
                           Text(
                             "12",
                             style: TextStyle(
@@ -199,8 +202,8 @@ class StackCard extends StatelessWidget {
             ),
 
             SizedBox(
-              height: 350,
-              width: 420,
+              height: 330,
+              width: 400,
               child: Card(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
@@ -271,21 +274,43 @@ class StackCard extends StatelessWidget {
                                   ],
                                 ),
                                 Spacer(),
-                                Padding(
-                                  padding: const EdgeInsets.only(
-                                    right: 10,
-                                    top: 10,
-                                  ),
-                                  child: Row(
-                                    children: [
-                                      Text(
-                                        "In progress",
-                                        style: TextStyle(
-                                          color: Colors.deepPurple,
+                                Row(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                        right: 10,
+                                        top: 5,
+                                      ),
+                                      child: Container(
+                                        height: 25,
+                                        width: 90,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(
+                                            5,
+                                          ),
+                                          color: const Color.fromARGB(
+                                            255,
+                                            226,
+                                            177,
+                                            235,
+                                          ),
+                                        ),
+
+                                        child: Padding(
+                                          padding: const EdgeInsets.only(
+                                            left: 10,
+                                            top: 2,
+                                          ),
+                                          child: Text(
+                                            "In Progress",
+                                            style: TextStyle(
+                                              color: Colors.deepPurple,
+                                            ),
+                                          ),
                                         ),
                                       ),
-                                    ],
-                                  ),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
@@ -345,19 +370,42 @@ class StackCard extends StatelessWidget {
                                   ],
                                 ),
                                 Spacer(),
-                                Padding(
-                                  padding: const EdgeInsets.only(
-                                    right: 10,
-                                    top: 10,
-                                  ),
-                                  child: Row(
-                                    children: [
-                                      Text(
-                                        "In progress",
-                                        style: TextStyle(color: Colors.blue),
+                                Row(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                        top: 5,
+                                        right: 10,
                                       ),
-                                    ],
-                                  ),
+                                      child: Container(
+                                        height: 25,
+                                        width: 90,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(
+                                            5,
+                                          ),
+                                          color: const Color.fromARGB(
+                                            255,
+                                            177,
+                                            209,
+                                            224,
+                                          ),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.only(
+                                            top: 2,
+                                            left: 10,
+                                          ),
+                                          child: Text(
+                                            "In Progress",
+                                            style: TextStyle(
+                                              color: Colors.blue,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
@@ -420,19 +468,42 @@ class StackCard extends StatelessWidget {
                                   ),
                                 ),
                                 Spacer(),
-                                Padding(
-                                  padding: const EdgeInsets.only(
-                                    right: 10,
-                                    top: 10,
-                                  ),
-                                  child: Row(
-                                    children: [
-                                      Text(
-                                        "Completed",
-                                        style: TextStyle(color: Colors.green),
+                                Row(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                        top: 5,
+                                        right: 10,
                                       ),
-                                    ],
-                                  ),
+                                      child: Container(
+                                        height: 25,
+                                        width: 90,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(
+                                            5,
+                                          ),
+                                          color: const Color.fromARGB(
+                                            255,
+                                            182,
+                                            233,
+                                            183,
+                                          ),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.only(
+                                            left: 10,
+                                            top: 2,
+                                          ),
+                                          child: Text(
+                                            "Completed",
+                                            style: TextStyle(
+                                              color: Colors.green,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
@@ -491,19 +562,42 @@ class StackCard extends StatelessWidget {
                                   ],
                                 ),
                                 Spacer(),
-                                Padding(
-                                  padding: const EdgeInsets.only(
-                                    right: 10,
-                                    top: 10,
-                                  ),
-                                  child: Row(
-                                    children: [
-                                      Text(
-                                        "Pending",
-                                        style: TextStyle(color: Colors.orange),
+                                Row(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                        top: 5,
+                                        right: 10,
                                       ),
-                                    ],
-                                  ),
+                                      child: Container(
+                                        height: 25,
+                                        width: 80,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(
+                                            5,
+                                          ),
+                                          color: const Color.fromARGB(
+                                            255,
+                                            250,
+                                            221,
+                                            176,
+                                          ),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.only(
+                                            top: 2,
+                                            left: 15,
+                                          ),
+                                          child: Text(
+                                            "Pending",
+                                            style: TextStyle(
+                                              color: Colors.orange,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
