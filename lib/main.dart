@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_class/Login.dart';
-import 'package:flutter_class/Register.dart';
+import 'package:flutter_class/mobileTopUp.dart';
 
 void main() {
   runApp(const MyMainApp());
@@ -18,7 +17,7 @@ class MyMainApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Register(),
+      home: MobileTopUp(),
     );
   }
 }
